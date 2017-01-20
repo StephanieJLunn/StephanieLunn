@@ -15,10 +15,4 @@ module.exports = function(app) {
 	app.get('/about', function(req,res) { res.sendfile('./public/views/about.html')});
 	app.get('/hci', function(req,res) { res.sendfile('./public/views/hci.html')});
 
-	//Prior app.get
-	/*
-		app.get('*', function(req, res) {
-		res.sendfile('./public/index.html');
-	});
-	*/
 };
