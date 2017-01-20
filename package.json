@@ -1,16 +1,11 @@
 {
-	"name": "Stephanie Lunn",
-	"version": "0.0.1",
-	"description": "Stephanie Lunn package.json file",
-	"dependencies": {
-		"express": ">=3.4.7 <4",
-		"jade": ">=1.1.4",
-		"nano": "*",
-		"stylus": "^0.49.1",
-		"nib": "^1.0.4"
-	},
-	"engines": {
-		"node": ">=0.10.0"
-	},
-	"repository": {}
+  "name": "starter-node-angular",
+  "main": "server.js",
+  "dependencies": {
+    "express" : "~4.5.1",
+	"mongoose" : "~3.8.0",
+	"body-parser" : "~1.4.2",
+	"method-override" : "~2.0.2"
+  }
 }
+

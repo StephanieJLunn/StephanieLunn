@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<base href="/">
+
+	<title>About Stephanie Lunn</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/style.css"> 
+	
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="../css/stylish-portfolio.css">
+
+	<!-- JS -->
+	<script src="libs/angular/angular.min.js"></script>
+	<script src="libs/angular-route/angular-route.min.js"></script>
+
+	<!-- ANGULAR CUSTOM -->
+	<script src="../js/controllers/MainCtrl.js"></script>
+	<script src="../js/controllers/NerdCtrl.js"></script>
+	<script src="../js/services/NerdService.js"></script>
+	<script src="../js/controllers/GeekCtrl.js"></script>
+	<script src="../js/services/GeekService.js"></script>
+	<script src="../js/appRoutes.js"></script>
+	<script src="../js/app.js"></script>
+	
+	<!-- Custom Fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="../index.html"  onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <!--
+			<li>
+                <a href="IVT/index.html" onclick = $("#menu-close").click(); >IVT Test Page</a>
+            </li>
+			-->
+            <li>
+                <a href="..\views\about.html" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <!--
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            </li>
+			-->
+            <li>
+                <a href="..\views\hci.html" onclick = $("#menu-close").click(); >HCI</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Contact</a>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>About Me</h1>
+			<br>
+				<div class="col-sm-6 col-lg-8" style="clear:both; float:none; margin:0 auto;">
+				  	<div class="panel panel-primary">
+						  	<div class="panel-heading">Hello there, I am Stephanie Lunn.</div>
+					  		<div class="panel-body">
+					  			<div style="height: 180px; resize: both; overflow: auto;">
+								    <img src="./img/Me.jpg" alt=" " style="padding-top:1px; max-height: 140%; float: left" class="img-responsive"/>
+									<div class="text-horizontal-center" style= "margin: 4px;">
+										<p style="padding-top:40px; padding-left:60px; color: #000000;">
+										Previously, I obtained my B.S. my and M.S. in Neuroscience from the University of Miami. Upon completion of my degree, I worked in health insurance and marketing before discovering my love of coding. To gain a better understanding of the subject, I returned to school to obtain a degree in Computer Science. Currently I am a student at Florida International University, where I also work in the <a href= "http://ascl.cis.fiu.edu/" style="color: #003F87">Affective Social Computing Laboratory</a>. Alonside Dr. Lisetti, I am able to merge my interest in both fields and to work on the design and implementation of intelligent virtual agents.</p>
+									</div>
+								</div>
+								<br>
+								</br>
+					    		<!--Can remove comment and put panel content here-->
+					  		</div>
+					</div>
+				</div>
+            <br>
+            <!--
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+            -->
+        </div>
+    </header>
+    
+    <!-- About -->
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <!--
+                <div class="col-lg-12 text-center">
+                    <h2>My portfolio will give you an idea of what I do</h2>
+                    <p class="lead">First take a look at some of my photography <a target="_blank" href="http://join.deathtothestockphoto.com/"> from my travels</a>.</p>
+                </div>
+                 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <!--
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>My Skills</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+    -->                
+                    <!-- /.row (nested) -->
+    <!--                
+                </div>
+    -->            
+                <!-- /.col-lg-10 -->
+    <!--            
+            </div>
+    -->        
+            <!-- /.row -->
+    <!--        
+        </div>
+    -->    
+        <!-- /.container -->
+    <!--    
+    </section>
+    -->
+
+    <!-- Callout -->
+    <!--
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>Vertically Centered Text</h1>
+        </div>
+    </aside>
+    -->
+
+    <!-- Portfolio -->
+    <!--
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>My Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    -->               
+                    <!-- /.row (nested) -->
+    <!--                
+                    <a href="#" class="btn btn-dark">View More Items</a>
+                </div>
+    -->            
+                <!-- /.col-lg-10 -->
+    <!--            
+            </div>
+    -->        
+            <!-- /.row -->
+    <!--        
+        </div>
+    -->    
+        <!-- /.container -->
+    <!--    
+    </section>
+-->
+
+
+    <!-- Footer -->
+    <footer>
+		<section id="contact" class="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1 text-center">
+						<h4><strong>Contact Me Now</strong>
+						</h4>
+		
+						<ul class="list-unstyled">
+							<!--
+							<li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+						-->
+							<li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:SLunn002@fiu.edu">SLunn002@fiu.edu</a>
+							</li>
+						</ul>
+						<br>
+
+						<!--
+						<ul class="list-inline">
+							<li>
+								<a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+							</li>
+						</ul>
+						-->
+						<hr class="small">
+						<p class="text-muted">Copyright &copy; Stephanie Lunn 2017</p>
+					</div>
+				</div>
+			</div>
+		</section>	
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
+
